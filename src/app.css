@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('/fonts/RobotoMono-VariableFont_wght.ttf'),
+        url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+        font-display: swap;
+}
+@theme {
+    --font-custom: "RobotoMono", monospace;
+}
+
+@plugin '@tailwindcss/typography';
+@plugin "daisyui" {
+themes: light --default, dark --prefersdark
+};
