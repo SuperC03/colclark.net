@@ -6,9 +6,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
   preprocess: [vitePreprocess(), mdsvex()],
   kit: {
-    adapter: adapter({
-      config: {}
-    })
+    adapter: adapter()
   },
   extensions: ['.svelte', '.svx']
 };
