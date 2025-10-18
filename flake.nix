@@ -1,3 +1,18 @@
+## NOTE: need to update system config with the following
+## (this isn't great, so if you know how to reproducably put it
+# here, plz let me know thx)
+# programs.nix-ld.enable = true;
+# programs.nix-ld.libraries = with pkgs; [
+#   stdenv.cc.cc
+#   zlib
+#   fuse3
+#   icu
+#   nss
+#   openssl
+#   curl
+#   expat
+# ];
+
 {
   description = "A Nix-flake-based Node.js dev environment for colclark.net";
 
@@ -14,6 +29,7 @@
       packages = with pkgs; [
         nodejs_24
         nodePackages.pnpm
+        wrangler
       ];
 
       shellHook = ''
