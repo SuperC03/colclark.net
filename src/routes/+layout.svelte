@@ -17,5 +17,5 @@
   <link rel="icon" href={favicon} />
 </svelte:head>
 
-<Navbar />x 
+<Navbar />x
 {@render children?.()}
