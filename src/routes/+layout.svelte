@@ -12,5 +12,5 @@
   });
 </script>
 
-<Navbar />x
+<Navbar />
 {@render children?.()}

@@ -6,9 +6,13 @@
     url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
   font-display: swap;
 }
-/*
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 @theme {
-  --font-custom: 'RobotoMono', monospace;
+  --font-mono: 'RobotoMono', monospace;
 }
 
 @plugin '@tailwindcss/typography';
@@ -16,4 +20,7 @@
   themes:
     light --default,
     dark --prefersdark;
-} */
+}
+@plugin "daisyui/theme" {
+  --color-primary: #191970;
+}
