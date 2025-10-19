@@ -1,11 +1,12 @@
 @import 'tailwindcss';
-@font-face {
+ @font-face {
   font-family: 'RobotoMono';
   src:
     url('/fonts/RobotoMono-VariableFont_wght.ttf'),
     url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
   font-display: swap;
 }
+/*
 @theme {
   --font-custom: 'RobotoMono', monospace;
 }
@@ -15,4 +16,4 @@
   themes:
     light --default,
     dark --prefersdark;
-}
+} */
