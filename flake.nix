@@ -1,6 +1,6 @@
 ## NOTE: need to update system config with the following
 ## (this isn't great, so if you know how to reproducably put it
-# here, plz let me know thx)
+## here, plz let me know thx)
 # programs.nix-ld.enable = true;
 # programs.nix-ld.libraries = with pkgs; [
 #   stdenv.cc.cc
