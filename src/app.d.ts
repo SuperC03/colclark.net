@@ -10,4 +10,6 @@ declare global {
   }
 }
 
-export {};
+declare module 'archieml' {
+  export function load(data: string): string;
+}

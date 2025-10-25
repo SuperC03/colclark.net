@@ -1,12 +1,12 @@
 <script>
-  import Link from '$lib/components/elements/link.svelte';
+  import Link from '$lib/elements/link.svelte';
 </script>
 
 <svelte:head>
   <title>Colin Clark | Home</title>
 </svelte:head>
 
-<div class="mx-auto max-w-4xl min-h-screen">
+<div class="mx-auto min-h-screen max-w-4xl">
   <main class="mx-auto flex min-h-screen w-9/10 flex-col justify-center font-mono sm:min-h-156">
     <p class="my-8 text-lg/relaxed sm:text-xl/loose">
       Hi, I'm <b>Colin Clark</b>, a senior at <Link href="https://web.mit.edu" external>MIT</Link> studying

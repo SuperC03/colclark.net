@@ -38,5 +38,5 @@
   </nav>
 </div>
 
- <!-- Spacer (if needed) -->
+<!-- Spacer (if needed) -->
 <!-- <div class="navbar sm:invisible"></div> -->

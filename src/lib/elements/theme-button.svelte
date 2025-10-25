@@ -23,8 +23,8 @@
   };
 </script>
 
-<label class="swap swap-rotate">
-  <input type="checkbox" checked={currentTheme == 'dark'} onchange={setTheme} />
+<label class="swap swap-rotate" for="theme-toggle">
+  <input type="checkbox" checked={currentTheme == 'dark'} onchange={setTheme} id="theme-toggle" />
   <!-- sun icon -->
   <svg class="swap-off h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path

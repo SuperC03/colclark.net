@@ -1,0 +1,10 @@
+type: external
+title: First Post
+
+[+content]
+# Hey
+Whatever [Google](https://google.com)
+* One
+* Two
+Einstein type shih $E=mc^2$
+[]
