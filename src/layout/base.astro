@@ -1,0 +1,17 @@
+---
+import MetaLayout from "./_meta.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  jsonSchema?: string;
+}
+
+const { title, description, jsonSchema }: Props = Astro.props;
+---
+
+<MetaLayout title={`Colin Clark | ${title}`} {description} {jsonSchema}>
+  <!-- TODO add navbar -->
+  <slot />
+  <!-- TODO add footer -->
+</MetaLayout>
