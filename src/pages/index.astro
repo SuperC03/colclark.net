@@ -1,10 +1,24 @@
 ---
 import BaseLayout from "../layout/base.astro";
+import { home } from "../json-schema";
 ---
 
 <BaseLayout
   title="Engineering & Miscellany"
   description="I build hardware and software, from circuit boards to the code that runs on them. I'm trying to write more about things I find interesting."
+  jsonSchema={home()}
 >
-  <h1>Cool Blog</h1>
+  <header>
+    <h2>Intro</h2>
+  </header>
+  <div>
+    <section>
+      <h2>Projects</h2>
+      <a href="/projects">See More</a>
+    </section>
+    <section>
+      <h2>Writings</h2>
+      <a href="/posts">See More</a>
+    </section>
+  </div>
 </BaseLayout>

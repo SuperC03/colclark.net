@@ -11,7 +11,19 @@ const { title, description, jsonSchema }: Props = Astro.props;
 ---
 
 <MetaLayout title={`Colin Clark | ${title}`} {description} {jsonSchema}>
-  <!-- TODO add navbar -->
+  <!-- TODO style navbar -->
+  <nav>
+    <div>logo</div>
+    <ul>
+      <li>Posts</li>
+      <li>Projects</li>
+      <li>Resume</li>
+    </ul>
+  </nav>
   <slot />
-  <!-- TODO add footer -->
+  <!-- TODO style footer -->
+  <footer>
+    <h4>colclark</h4>
+    <div>Icons</div>
+  </footer>
 </MetaLayout>

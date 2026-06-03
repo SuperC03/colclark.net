@@ -2,9 +2,7 @@
 import { defineConfig } from "astro/config";
 
 import cloudflare from "@astrojs/cloudflare";
-
 import markdoc from "@astrojs/markdoc";
-
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
