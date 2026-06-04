@@ -27,3 +27,53 @@ export const home = () =>
       },
     ],
   });
+
+export const about = () =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://colclark.net/about#profilepage",
+        url: "https://colclark.net/about",
+        isPartOf: { "@id": "https://colclark.net/#website" },
+        mainEntity: { "@id": "https://colclark.net/#person" },
+        dateModified: "2026-06-03T00:00:00Z",
+      },
+      {
+        "@type": "Person",
+        "@id": "https://colclark.net/#person",
+        name: "Colin Clark",
+        url: "https://colclark.net/about",
+        description:
+          "MIT electrical engineer focused in the intersection of hardware and software, from power electronics and PCBs to web dev and functional programming, and everything in between.",
+        image: "https://colclark.net/headshot.webp",
+        sameAs: [
+          "https://github.com/SuperC03/",
+          "https://www.linkedin.com/in/superc03",
+          "https://x.com/superc_03",
+          "https://www.mit.edu/~colclark/",
+        ],
+        alumniOf: [
+          {
+            "@type": "EducationalOrganization",
+            name: "Massachusetts Institute of Technology",
+            url: "https://web.mit.edu/",
+          },
+        ],
+        email: "contact@colclark.net",
+        knowsLanguage: [
+          { "@type": "Language", name: "English" },
+          { "@type": "Language", name: "Japanese" },
+        ],
+        knowsAbout: [
+          "Power Electronics",
+          "Electrical Engineering",
+          "FPGA Development",
+          "Web Development",
+          "PCB Design",
+          "Energy",
+        ],
+      },
+    ],
+  });

@@ -1,8 +1,13 @@
 ---
 import BaseLayout from "../layout/base.astro";
+import { about } from "../json-schema";
 ---
 
-<BaseLayout title="About" description="Fun facts about Colin...">
+<BaseLayout
+  title="About"
+  description="I build hardware and software, from circuit boards to the code that runs on them. I'm trying to write more about things I find interesting."
+  jsonSchema={about()}
+>
   <main>
     <h1>Colin Clark</h1>
   </main>
