@@ -1,4 +1,4 @@
-# Portfolio
+# Engineering & Miscellany
 An attempt to learn graphic design while ideally becoming more employable. Also writing :)
 
 ## Technologies
@@ -10,3 +10,5 @@ An attempt to learn graphic design while ideally becoming more employable. Also 
 - [Daniel Kao's Website](https://www.diplateevo.com/about/) - Graphic design
 - [Shinyu Lu's Website](https://www.shiyunlu.com/projects) - Project formatting
 - [CJ Quines](https://cjquines.com/) - How to write about things
+- [Utopia](https://utopia.fyi) - Fluid responsive design
+- [iA Writer](https://ia.net/topics/in-search-of-the-perfect-writing-font/) - Monospace fonts can be cool

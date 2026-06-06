@@ -33,6 +33,7 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
 p,
@@ -43,4 +44,10 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
 }

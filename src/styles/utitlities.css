@@ -1,0 +1,11 @@
+.wrapper {
+  width: min(100% - var(--gutter) * 2, var(--width-content));
+  margin-inline: auto;
+}
+.wrapper--narrow {
+  --width-content: var(--width-narrow);
+}
+
+.prose {
+  max-width: var(--measure);
+}

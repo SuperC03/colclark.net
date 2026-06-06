@@ -35,6 +35,22 @@ const { title, description, jsonSchema }: Props = Astro.props;
       media="(prefers-color-scheme: light)"
     />
 
+    <!-- Make fonts load faster -->
+    <link
+      rel="preload"
+      href="/fonts/iAWriterQuattroS-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/iAWriterMonoS-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://colclark.net" />
