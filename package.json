@@ -1,58 +1,40 @@
 {
   "name": "colclark.net",
-  "private": true,
-  "version": "0.0.1",
   "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "prepare": "svelte-kit sync || echo ''",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "format": "prettier --write .",
-    "lint": "prettier --check . && eslint ."
-  },
-  "devDependencies": {
-    "@eslint/compat": "^1.4.0",
-    "@eslint/js": "^9.36.0",
-    "@sveltejs/adapter-auto": "^7.0.0",
-    "@sveltejs/adapter-cloudflare": "^7.2.4",
-    "@sveltejs/kit": "^2.43.2",
-    "@sveltejs/vite-plugin-svelte": "^6.2.0",
-    "@tailwindcss/typography": "^0.5.18",
-    "@tailwindcss/vite": "^4.1.13",
-    "@types/node": "^22",
-    "archieml": "^0.5.0",
-    "daisyui": "^5.2.2",
-    "eslint": "^9.36.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.12.4",
-    "globals": "^16.4.0",
-    "mdsvex": "^0.12.6",
-    "prettier": "^3.6.2",
-    "prettier-plugin-svelte": "^3.4.0",
-    "prettier-plugin-tailwindcss": "^0.6.14",
-    "svelte": "^5.39.5",
-    "svelte-check": "^4.3.2",
-    "tailwindcss": "^4.1.13",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.44.1",
-    "vite": "^7.1.7",
-    "wrangler": "^4.43.0",
-    "zod": "^4.1.12"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
-      "esbuild",
-      "sharp",
-      "workerd"
-    ]
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint src/ --fix",
+    "format": "prettier src/ --write",
+    "generate-types": "wrangler types"
   },
   "dependencies": {
-    "katex": "^0.16.25",
-    "marked": "^16.4.1",
-    "marked-katex-extension": "^5.1.5"
+    "@astrojs/cloudflare": "^13.6.1",
+    "@astrojs/markdoc": "^1.0.6",
+    "@astrojs/sitemap": "^3.7.3",
+    "@iconify-json/ant-design": "^1.2.5",
+    "astro": "^6.4.3"
+  },
+  "devDependencies": {
+    "@eslint/css": "^1.3.0",
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/parser": "^8.60.1",
+    "eslint": "^10.4.1",
+    "eslint-plugin-astro": "^1.7.0",
+    "globals": "^17.6.0",
+    "jiti": "^2.7.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript-eslint": "^8.60.1",
+    "wrangler": "^4.97.0"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }

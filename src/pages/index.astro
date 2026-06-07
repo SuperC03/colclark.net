@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layout/base.astro";
+import ELink from "../components/e-link.astro";
+
+import { home } from "../json-schema";
+---
+
+<style>
+  .intro-text {
+    margin: var(--space-s) auto;
+  }
+
+  .digest-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .digest-row > div {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  header,
+  section {
+    margin: var(--space-m) auto;
+  }
+</style>
+
+<BaseLayout
+  title="Engineering & Miscellany"
+  description="I build hardware and software, from circuit boards to the code that runs on them. I'm trying to write more about things I find interesting."
+  jsonSchema={home()}
+>
+  <header class="wrapper-narrow">
+    <h2>Welcome</h2>
+    <p class="prose intro-text">
+      Hi! I'm Colin, an MIT student doing electrical engineering and physics. I
+      am researching Low Energy Nuclear Reactions with <ELink
+        href="https://florianmetzler.com"
+      >
+        Florian Metzler</ELink
+      > and <ELink href="https://duhanzhang.com">Duhan Zhang</ELink> under Principal
+      Investigator <ELink
+        href="https://www.rle.mit.edu/people/peter-l-hagelstein/"
+        >Peter Hagelstein</ELink
+      >. I also develop satellite communication systems at <ELink
+        href="https://www.mithril.space/">Mithril Space</ELink
+      >.
+    </p>
+    <p>
+      This website is a work in progress, please excuse any unfinished sections.
+    </p>
+  </header>
+  <section class="wrapper digest-row">
+    <div>
+      <h2>Projects</h2>
+      <p>Coming soon...</p>
+      <!-- <a href="/projects">See More</a> -->
+    </div>
+    <div>
+      <h2>Writings</h2>
+      <p>Coming soon...</p>
+      <!-- <a href="/posts">See More</a> -->
+    </div>
+  </section>
+</BaseLayout>

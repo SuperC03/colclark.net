@@ -1,0 +1,67 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  jsonSchema?: string;
+}
+
+const { title, description, jsonSchema }: Props = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Colin Clark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portfolio, blog, engineering" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href="https://colclark.net" />
+
+    <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="/icons/logo_white.ico"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="icon"
+      href="/icons/logo_blue.ico"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <!-- Make fonts load faster -->
+    <link
+      rel="preload"
+      href="/fonts/iAWriterQuattroS-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/iAWriterMonoS-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://colclark.net" />
+
+    {
+      jsonSchema && (
+        <script type="application/ld+json" set:html={jsonSchema} is:inline />
+      )
+    }
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

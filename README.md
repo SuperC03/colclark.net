@@ -1,7 +1,14 @@
-# colclark.net
+# Engineering & Miscellany
+An attempt to learn graphic design while ideally becoming more employable. Also writing :)
 
-Colin Clark's personal/portfolio website!
+## Technologies
+- [AstroJS](https://astro.build/) for Rendering
+- [MarkDoc](https://markdoc.dev/) for storing articles
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/) for hosting
 
-The visual design and use of [ArchieML](https://archieml.org/) was heavily inspired from Daniel Kao's [website](https://www.diplateevo.com/) ([Github](https://github.com/dkaoster/www.diplateevo.com)).
-
-Built with [SvelteKit](https://svelte.dev/) & [TailwindCSS](https://tailwindcss.com/) (with ~~a bit~~ a lot of [DaisyUI](https://daisyui.com/)), deployed with [Cloudflare Pages](https://workers.cloudflare.com/).
+## Inspiration
+- [Daniel Kao's Website](https://www.diplateevo.com/about/) - Graphic design
+- [Shinyu Lu's Website](https://www.shiyunlu.com/projects) - Project formatting
+- [CJ Quines](https://cjquines.com/) - How to write about things
+- [Utopia](https://utopia.fyi) - Fluid responsive design
+- [iA Writer](https://ia.net/topics/in-search-of-the-perfect-writing-font/) - Monospace fonts can be cool

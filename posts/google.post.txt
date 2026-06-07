@@ -1,3 +1,0 @@
-type: external
-title: Redirect to Google
-url: https://google.com
