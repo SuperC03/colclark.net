@@ -21,7 +21,7 @@
   --accent-contrast: oklch(0.98 0.015 280);
 
   /* coloring derivatives */
-  --bg: var(--grey-100);
+  --bg: var(--grey-50);
   --surface: white;
   --text: var(--grey-900);
   --text-muted: var(--grey-600);

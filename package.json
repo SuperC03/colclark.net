@@ -18,6 +18,7 @@
     "@astrojs/cloudflare": "^13.6.1",
     "@astrojs/markdoc": "^1.0.6",
     "@astrojs/sitemap": "^3.7.3",
+    "@iconify-json/ant-design": "^1.2.5",
     "astro": "^6.4.3"
   },
   "devDependencies": {
