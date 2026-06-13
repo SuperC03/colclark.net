@@ -8,6 +8,7 @@ interface Props {
 }
 
 const { title, description, jsonSchema }: Props = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const { title, description, jsonSchema }: Props = Astro.props;
     <meta name="keywords" content="portfolio, blog, engineering" />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="canonical" href="https://colclark.net" />
+    <link rel="canonical" href={canonicalURL} />
 
     <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
     <link

@@ -8,6 +8,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://colclark.net",
+  trailingSlash: "never",
   adapter: cloudflare(),
   integrations: [markdoc(), sitemap()],
   session: {
