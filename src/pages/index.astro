@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layout/base.astro";
-import ELink from "../components/e-link.astro";
+import Link from "../components/link.astro";
 
 import { home } from "../json-schema";
 ---
@@ -36,19 +36,22 @@ import { home } from "../json-schema";
   <header class="wrapper-narrow">
     <h2>Welcome</h2>
     <p class="prose intro-text">
-      Hi! I'm Colin, an MIT student doing electrical engineering and physics. I
-      am researching Low Energy Nuclear Reactions with <ELink
+      Hi! I'm Colin, an engineer interested in power electronics, signal
+      processing, and physics. I'm researching Low Energy Nuclear Reactions with <Link
         href="https://florianmetzler.com"
+        external
       >
-        Florian Metzler</ELink
-      > and <ELink href="https://duhanzhang.com">Duhan Zhang</ELink> under Principal
-      Investigator <ELink
+        Florian Metzler</Link
+      > and <Link href="https://duhanzhang.com" external>Duhan Zhang</Link> under
+      Principal Investigator <Link
         href="https://www.rle.mit.edu/people/peter-l-hagelstein/"
-        >Peter Hagelstein</ELink
-      >. I also develop satellite communication systems at <ELink
-        href="https://www.mithril.space/">Mithril Space</ELink
-      >. I also also work on computational infrastructure for <ELink
-        href="https://www.oligospace.com/">Oligo Space</ELink
+        external>Peter Hagelstein</Link
+      >. I also develop satellite communication systems at <Link
+        href="https://www.mithril.space/"
+        external>Mithril Space</Link
+      >. I also<sup>2</sup> work on computational infrastructure for <Link
+        href="https://www.oligospace.com/"
+        external>Oligo Space</Link
       >.
     </p>
     <p>

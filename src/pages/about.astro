@@ -1,7 +1,38 @@
 ---
+import { Image } from "astro:assets";
+import headshot from "../assets/images/headshot.webp";
+
 import BaseLayout from "../layout/base.astro";
+import Link from "../components/link.astro";
 import { about } from "../json-schema";
 ---
+
+<style>
+  header,
+  section {
+    margin: var(--space-m) auto;
+  }
+
+  .header-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: var(--space-s, 1rem);
+    width: 100%;
+    margin: var(--space-s) auto;
+  }
+
+  .headshot {
+    flex: 1 1 0;
+    height: auto;
+    min-width: 200px;
+  }
+
+  .header-content {
+    flex: 2 1 0;
+    min-width: 300px;
+  }
+</style>
 
 <BaseLayout
   title="About"
@@ -9,6 +40,26 @@ import { about } from "../json-schema";
   jsonSchema={about()}
 >
   <main>
-    <h1>Colin Clark</h1>
-  </main>
-</BaseLayout>
+    <header class="wrapper-narrow">
+      <h2>About Me</h2>
+      <div class="header-row">
+        <Image
+          class="headshot"
+          src={headshot}
+          alt="a headshot image of Colin Clark"
+          title="Wow, it's Colin :0"
+        />
+        <p class="header-content">
+          Hello, I'm Colin, an engineer from MIT majoring in <Link
+            href="https://www.eecs.mit.edu"
+            external>EECS</Link
+          > and <Link href="https://physics.mit.edu" external>Physics</Link>.
+          I'm interested in electronics (of the power and RF variety,
+          especially), signal processing, materials science, and whatever the
+          latest Javascript framework happens to be. I'm also trying to write
+          more about interesting things.
+        </p>
+      </div>
+    </header>
+  </main></BaseLayout
+>

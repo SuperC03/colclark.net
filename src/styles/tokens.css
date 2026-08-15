@@ -54,6 +54,11 @@
   --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
   --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
   --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+  --step-6: clamp(3.3592rem, 2.7828rem + 2.5621vw, 4.7684rem);
+  --step-7: clamp(4.0311rem, 3.2418rem + 3.508vw, 5.9605rem);
+  --step-8: clamp(4.8373rem, 3.7682rem + 4.7514vw, 7.4506rem);
+  --step-9: clamp(5.8048rem, 4.3695rem + 6.379vw, 9.3132rem);
+  --step-10: clamp(6.9657rem, 5.0529rem + 8.5015vw, 11.6415rem);
 
   /* @link https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
