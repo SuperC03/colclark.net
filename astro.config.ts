@@ -9,7 +9,9 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://colclark.net",
   trailingSlash: "never",
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    imageService: "compile",
+  }),
   integrations: [markdoc(), sitemap()],
   session: {
     // Site does not use sessions. Null driver prevents the Cloudflare adapter

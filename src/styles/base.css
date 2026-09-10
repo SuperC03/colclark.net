@@ -16,11 +16,12 @@ body {
 
 a {
   color: var(--text);
-  text-decoration-thickness: 0.08em;
+  /*text-decoration-thickness: 0.08em;
   text-underline-offset: 0.15em;
-  text-decoration: underline;
-  text-decoration-style: dashed;
-  transition: color var(--dur-fast) var(--ease-out);
+  text-decoration: underline;*/
+  text-decoration: none;
+  /*text-decoration-style: dashed;
+  transition: color var(--dur-fast) var(--ease-out);*/
 }
 a:hover {
   color: var(--accent);
